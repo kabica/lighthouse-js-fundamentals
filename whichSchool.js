@@ -2,18 +2,20 @@
 
 const whichSchool  = function (age) {
   const school = ["Elementary School" , 'Secondary School' , 'Lighthouse Labs'];
+  let response = 2;
 
   if(age < 13){
-    console.log(school[0]);
+    response = 0;
   }
 
   else if(age >= 13 && age <= 18){
-    console.log(school[1]);
+    response = 1;
   }
   else{
-    console.log(school[2]);
+    return school[response];
+    break;
   }
-  return 1;
+  return school[response];
 }
 
 
